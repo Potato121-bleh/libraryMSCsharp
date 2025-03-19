@@ -1,0 +1,7 @@
+C:\Users\ahpka\source\repos\library-MS-practice\library-MS-practice\bin\Debug\library-MS-practice.exe.config
+C:\Users\ahpka\source\repos\library-MS-practice\library-MS-practice\bin\Debug\library-MS-practice.exe
+C:\Users\ahpka\source\repos\library-MS-practice\library-MS-practice\bin\Debug\library-MS-practice.pdb
+C:\Users\ahpka\source\repos\library-MS-practice\library-MS-practice\obj\Debug\library-MS-practice.csproj.AssemblyReference.cache
+C:\Users\ahpka\source\repos\library-MS-practice\library-MS-practice\obj\Debug\library-MS-practice.csproj.CoreCompileInputs.cache
+C:\Users\ahpka\source\repos\library-MS-practice\library-MS-practice\obj\Debug\library-MS-practice.exe
+C:\Users\ahpka\source\repos\library-MS-practice\library-MS-practice\obj\Debug\library-MS-practice.pdb
