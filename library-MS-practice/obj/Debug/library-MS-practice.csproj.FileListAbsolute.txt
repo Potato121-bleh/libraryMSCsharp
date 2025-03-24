@@ -5,3 +5,10 @@ C:\Users\ahpka\source\repos\library-MS-practice\library-MS-practice\obj\Debug\li
 C:\Users\ahpka\source\repos\library-MS-practice\library-MS-practice\obj\Debug\library-MS-practice.csproj.CoreCompileInputs.cache
 C:\Users\ahpka\source\repos\library-MS-practice\library-MS-practice\obj\Debug\library-MS-practice.exe
 C:\Users\ahpka\source\repos\library-MS-practice\library-MS-practice\obj\Debug\library-MS-practice.pdb
+D:\Coding_D\C#\library_MS_C#\library-MS-practice\bin\Debug\library-MS-practice.exe.config
+D:\Coding_D\C#\library_MS_C#\library-MS-practice\bin\Debug\library-MS-practice.exe
+D:\Coding_D\C#\library_MS_C#\library-MS-practice\bin\Debug\library-MS-practice.pdb
+D:\Coding_D\C#\library_MS_C#\library-MS-practice\obj\Debug\library-MS-practice.csproj.AssemblyReference.cache
+D:\Coding_D\C#\library_MS_C#\library-MS-practice\obj\Debug\library-MS-practice.csproj.CoreCompileInputs.cache
+D:\Coding_D\C#\library_MS_C#\library-MS-practice\obj\Debug\library-MS-practice.exe
+D:\Coding_D\C#\library_MS_C#\library-MS-practice\obj\Debug\library-MS-practice.pdb

@@ -11,27 +11,40 @@ namespace library_MS_practice
         static void Main(string[] args)
         {
             LinkedList<string> userLists = new LinkedList<string>();
-            customLinkedList customLinkedList = new customLinkedList();
-            userSelect userSelects = new userSelect();
-            bool whileFlag = true;
-            bool whileAuthFlag = true;
-            while (whileAuthFlag) { 
-                string authFlag = userSelects.askToAuth(userLists);
-                if (authFlag == "logined") {
-                    whileAuthFlag = false;
-                    continue;
-                }
-            }
-            Console.WriteLine("Welcome to jampa library");
-            while (whileFlag) {
-                whileFlag = false;
-            }
+            string loginId = "";
 
-            //foreach (int s in list) { 
-            //    Console.WriteLine(s);
-            //}
+
+
+            Book book = new Book();
+            while (true) {
+
+                userSelect userSelects = new userSelect();
+                bool whileFlag = true;
+                bool whileAuthFlag = true;
+                while (whileAuthFlag)
+                {
+                    string authFlag = userSelects.askToAuth(userLists);
+                    if (authFlag != "")
+                    {
+                        loginId = authFlag;
+                        whileAuthFlag = false;
+                        continue;
+                    }
+
+                }
+                Console.WriteLine("======================================");
+                Console.WriteLine("Welcome to jampa library");
+                BookManagement bookManagement = new BookManagement();
+                bookManagement.libraryMenu(loginId);
+
+
+            }
 
         }
 
+
+        
+
     }
+
 }

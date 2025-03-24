@@ -11,7 +11,7 @@ namespace library_MS_practice
         public string removeNode<T>(LinkedList<T> list, int index)
         {
             
-            if (index > list.Count())
+            if (index < 0  || index > list.Count())
             {
                 return "index out of bound";
             }
