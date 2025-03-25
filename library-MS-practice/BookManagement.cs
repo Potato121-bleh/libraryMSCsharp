@@ -9,15 +9,23 @@ namespace library_MS_practice
 {
     internal class BookManagement
     {
+        //public int bookListRange()
+        //{
+        //    return bookList.Count();
+        //}
+
         public LinkedList<Book> bookList = new LinkedList<Book>();
+        private int originBookId = 0;
+
+        
 
         public BookManagement()
         {
-
             bookList.AddLast(new Book(101, "NiceI"));
             bookList.AddLast(new Book(102, "NiceII"));
             bookList.AddLast(new Book(103, "NiceIII"));
             bookList.AddLast(new Book(104, "NiceIV"));
+            this.originBookId = 100 + bookList.Count();
         }
 
         public string Insert(int index, Book book)
@@ -110,6 +118,7 @@ namespace library_MS_practice
         public void AddBook(int id, string title)
         {
             Book newBook = new Book(id, title);
+            
             Insert(bookList.Count, newBook);
             Console.WriteLine($"Added: {title} (ID: {id})");
         }
@@ -209,8 +218,11 @@ namespace library_MS_practice
                     case "1":
                         Console.Write("---------------------------- Enter Book Title: ");
                         string title = Console.ReadLine();
-                        Console.Write("Enter Book ID: ");
-                        int id = int.Parse(Console.ReadLine());
+                        //Console.Write("Enter Book ID: ");
+                        //int id = int.Parse(Console.ReadLine());
+                        originBookId++;
+                        int id = originBookId;
+                        
 
                         Console.Write("---------------------------- Do you want to specify an index? (y/n): ");
                         string option = Console.ReadLine().ToLower();
@@ -237,7 +249,7 @@ namespace library_MS_practice
                         if(op2 == "id")
                         {
 
-                            Console.Write("---------------------------- Enter Id to delete");
+                            Console.Write("---------------------------- Enter Id to delete: ");
                             int Id = int.Parse(Console.ReadLine());
                             
                             if (FindBookById(Id) != null)
@@ -255,7 +267,7 @@ namespace library_MS_practice
                         }
                         else
                         {
-                            Console.WriteLine("---------------------------- Enter index to delete");
+                            Console.WriteLine("---------------------------- Enter index to delete: ");
                             int index = int.Parse(Console.ReadLine());
                             Remove(index);
                             DisplayBooks();
