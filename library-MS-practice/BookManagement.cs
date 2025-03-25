@@ -9,21 +9,23 @@ namespace library_MS_practice
 {
     internal class BookManagement
     {
-        public LinkedList<Book> bookList = new LinkedList<Book>();
+        public static LinkedList<Book> bookList = new LinkedList<Book>();
 
         public BookManagement()
         {
-
-            bookList.AddLast(new Book(101, "NiceI"));
-            bookList.AddLast(new Book(102, "NiceII"));
-            bookList.AddLast(new Book(103, "NiceIII"));
-            bookList.AddLast(new Book(104, "NiceIV"));
+            if (bookList.Count == 0)
+            {
+                bookList.AddLast(new Book(101, "NiceI"));
+                bookList.AddLast(new Book(102, "NiceII"));
+                bookList.AddLast(new Book(103, "NiceIII"));
+                bookList.AddLast(new Book(104, "NiceIV"));
+            }
         }
 
         public string Insert(int index, Book book)
         {
             if (index < 0 || index > bookList.Count)
-                return "Index out of bounds";
+                return "!!!!!!!   Index out of bounds   !!!!!!!";
 
             if (index == 0)
             {
@@ -48,7 +50,7 @@ namespace library_MS_practice
         public string Remove(int index)
         {
             if (index < 0 || index >= bookList.Count)
-                return "Index out of bounds";
+                return "!!!!!!!!!!!!! Index out of bounds !!!!!!!!!!!!";
 
             LinkedListNode<Book> selectedBook = RetrieveNode(index);
             if (selectedBook != null)
@@ -56,7 +58,7 @@ namespace library_MS_practice
                 bookList.Remove(selectedBook);
                 return $"Removed: {selectedBook.Value.Title} (ID: {selectedBook.Value.Id})";
             }
-            return "Book not found";
+            return "!!!!!!!!!!!  Book not found !!!!!!!!!!!!!!";
         }
         public string RemoveById(int bookId)
         {
@@ -72,7 +74,7 @@ namespace library_MS_practice
                 current = current.Next;
             }
 
-            return "Book not found";
+            return "!!!!!!!!!!!  Book not found  !!!!!!!!!!!!";
         }
 
         private LinkedListNode<Book> RetrieveNode(int index)
@@ -95,6 +97,7 @@ namespace library_MS_practice
         {
           
             Console.WriteLine("Jampa library:");
+            Console.WriteLine("---------------------------- Current Book List ----------------------------");
             if (bookList.Count == 0)
             {
                 Console.WriteLine("No books available.");
@@ -242,7 +245,8 @@ namespace library_MS_practice
                             
                             if (FindBookById(Id) != null)
                             {
-                                RemoveById(Id);
+                                string result = RemoveById(Id);
+                                Console.WriteLine(result);
                                 DisplayBooks();
                                 
                             }
@@ -255,9 +259,10 @@ namespace library_MS_practice
                         }
                         else
                         {
-                            Console.WriteLine("---------------------------- Enter index to delete");
+                            Console.Write("---------------------------- Enter index to delete");
                             int index = int.Parse(Console.ReadLine());
-                            Remove(index);
+                            string result  = Remove(index);
+                            Console.WriteLine(result);
                             DisplayBooks();
                         }
                         break;
