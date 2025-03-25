@@ -20,7 +20,7 @@ namespace library_MS_practice
             bool pageflag = true;
             while (pageflag)
             {
-                Console.Clear();
+                //Console.Clear();
                 Console.WriteLine("You currently on page: " + userPage);
                 Console.WriteLine("1 - " + userPage);
                 Console.WriteLine("2 - backward");
@@ -35,9 +35,11 @@ namespace library_MS_practice
                         break;
                     case "2":
                         userPage = Bhistory.back();
+                        Console.Clear();
                         break;
                     case "3":
                         userPage = Bhistory.forward();
+                        Console.Clear();
                         break;
                     case "4":
                         System.Environment.Exit(0);
