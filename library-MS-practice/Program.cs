@@ -28,7 +28,7 @@ namespace library_MS_practice
                     {
                         loginId = authFlag;
                         whileAuthFlag = false;
-                        continue;
+                        break;
                     }
 
                 }

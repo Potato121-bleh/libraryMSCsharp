@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ahpka\\source\\repos\\library-MS-practice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{19802666-3C41-44D8-99B7-6FF04BFAC474}|library-MS-practice\\library-MS-practice.csproj|c:\\users\\ahpka\\source\\repos\\library-ms-practice\\library-ms-practice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19802666-3C41-44D8-99B7-6FF04BFAC474}|library-MS-practice\\library-MS-practice.csproj|solutionrelative:library-ms-practice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{19802666-3C41-44D8-99B7-6FF04BFAC474}|library-MS-practice\\library-MS-practice.csproj|c:\\users\\ahpka\\source\\repos\\library-ms-practice\\library-ms-practice\\userselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19802666-3C41-44D8-99B7-6FF04BFAC474}|library-MS-practice\\library-MS-practice.csproj|solutionrelative:library-ms-practice\\userselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19802666-3C41-44D8-99B7-6FF04BFAC474}|library-MS-practice\\library-MS-practice.csproj|c:\\users\\ahpka\\source\\repos\\library-ms-practice\\library-ms-practice\\customlinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19802666-3C41-44D8-99B7-6FF04BFAC474}|library-MS-practice\\library-MS-practice.csproj|solutionrelative:library-ms-practice\\customlinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19802666-3C41-44D8-99B7-6FF04BFAC474}|library-MS-practice\\library-MS-practice.csproj|c:\\users\\ahpka\\source\\repos\\library-ms-practice\\library-ms-practice\\bookmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19802666-3C41-44D8-99B7-6FF04BFAC474}|library-MS-practice\\library-MS-practice.csproj|solutionrelative:library-ms-practice\\bookmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19802666-3C41-44D8-99B7-6FF04BFAC474}|library-MS-practice\\library-MS-practice.csproj|C:\\Users\\ahpka\\source\\repos\\library-MS-practice\\library-ms-practice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19802666-3C41-44D8-99B7-6FF04BFAC474}|library-MS-practice\\library-MS-practice.csproj|solutionrelative:library-ms-practice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19802666-3C41-44D8-99B7-6FF04BFAC474}|library-MS-practice\\library-MS-practice.csproj|C:\\Users\\ahpka\\source\\repos\\library-MS-practice\\library-ms-practice\\browserhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19802666-3C41-44D8-99B7-6FF04BFAC474}|library-MS-practice\\library-MS-practice.csproj|solutionrelative:library-ms-practice\\browserhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,6 +29,19 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookManagement.cs",
+              "DocumentMoniker": "C:\\Users\\ahpka\\source\\repos\\library-MS-practice\\library-MS-practice\\BookManagement.cs",
+              "RelativeDocumentMoniker": "library-MS-practice\\BookManagement.cs",
+              "ToolTip": "C:\\Users\\ahpka\\source\\repos\\library-MS-practice\\library-MS-practice\\BookManagement.cs",
+              "RelativeToolTip": "library-MS-practice\\BookManagement.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAiwEEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T07:06:37.045Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             },
@@ -34,13 +51,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "browserHistory.cs",
+              "DocumentMoniker": "C:\\Users\\ahpka\\source\\repos\\library-MS-practice\\library-MS-practice\\browserHistory.cs",
+              "RelativeDocumentMoniker": "library-MS-practice\\browserHistory.cs",
+              "ToolTip": "C:\\Users\\ahpka\\source\\repos\\library-MS-practice\\library-MS-practice\\browserHistory.cs",
+              "RelativeToolTip": "library-MS-practice\\browserHistory.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAowDQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T06:47:45.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "userSelect.cs",
               "DocumentMoniker": "C:\\Users\\ahpka\\source\\repos\\library-MS-practice\\library-MS-practice\\userSelect.cs",
               "RelativeDocumentMoniker": "library-MS-practice\\userSelect.cs",
               "ToolTip": "C:\\Users\\ahpka\\source\\repos\\library-MS-practice\\library-MS-practice\\userSelect.cs",
               "RelativeToolTip": "library-MS-practice\\userSelect.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAswDIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T03:07:24.393Z",
               "EditorCaption": ""
@@ -48,25 +78,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "customLinkedList.cs",
-              "DocumentMoniker": "C:\\Users\\ahpka\\source\\repos\\library-MS-practice\\library-MS-practice\\customLinkedList.cs",
-              "RelativeDocumentMoniker": "library-MS-practice\\customLinkedList.cs",
-              "ToolTip": "C:\\Users\\ahpka\\source\\repos\\library-MS-practice\\library-MS-practice\\customLinkedList.cs",
-              "RelativeToolTip": "library-MS-practice\\customLinkedList.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAYwEAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T02:49:48.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ahpka\\source\\repos\\library-MS-practice\\library-MS-practice\\Program.cs",
               "RelativeDocumentMoniker": "library-MS-practice\\Program.cs",
               "ToolTip": "C:\\Users\\ahpka\\source\\repos\\library-MS-practice\\library-MS-practice\\Program.cs",
               "RelativeToolTip": "library-MS-practice\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAYwBkAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T01:23:38.765Z",
               "EditorCaption": ""

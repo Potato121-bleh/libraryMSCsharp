@@ -16,7 +16,7 @@ namespace practice_stack
         {
             this.currentPage = currentpage;
             backwardStack.Push(currentPage);
-            Console.WriteLine("You currently visit: " + currentpage);
+            //Console.WriteLine("You currently visit: " + currentpage);
         }
 
 
@@ -25,15 +25,16 @@ namespace practice_stack
             this.currentPage = newPage;
             backwardStack.Push(newPage);
             forwardStack.Clear();
-            Console.WriteLine("You currently visit: " + this.currentPage);
+            //Console.WriteLine("You currently visit: " + this.currentPage);
         }
 
-        public void back()
+        public string back()
         {
             if (backwardStack.Count == 1)
             {
                 Console.WriteLine("No Stack Found");
-                return;
+                //Console.WriteLine(backwardStack.Peek());
+                return backwardStack.Peek();
             }
             
             forwardStack.Push(this.currentPage);
@@ -41,18 +42,20 @@ namespace practice_stack
             this.currentPage = backwardStack.Peek();
 
             Console.WriteLine("You currently move back to: " + this.currentPage);
+            return this.currentPage;
         }
 
-        public void forward()
+        public string forward()
         {
             if (forwardStack.Count == 0) { 
                 Console.WriteLine("No Stack Found");
-                return;
+                return backwardStack.Peek();
             }
             this.currentPage = forwardStack.Peek();
             forwardStack.Pop();
             backwardStack.Push(this.currentPage);
             Console.WriteLine("You currently forward to: " + this.currentPage);
+            return this.currentPage;
         }
 
 

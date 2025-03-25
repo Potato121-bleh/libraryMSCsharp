@@ -13,55 +13,51 @@ namespace library_MS_practice
         public string askToAuth(LinkedList<string> userList)
         {
 
-            Console.WriteLine("Welcome to Jampa library Co.ltd");
-            Console.WriteLine("1 to login");
-            Console.WriteLine("2 to sign up");
-            Console.WriteLine("3 to exit");
-            string userAuthSel = Console.ReadLine();
+            browserHistory Bhistory = new browserHistory("login");
+            Bhistory.visit("signup");
+            string userAuthSel = "";
+            string userPage = "signup";
+            bool pageflag = true;
+            while (pageflag)
+            {
+                Console.Clear();
+                Console.WriteLine("You currently on page: " + userPage);
+                Console.WriteLine("1 - " + userPage);
+                Console.WriteLine("2 - backward");
+                Console.WriteLine("3 - forward");
+                Console.WriteLine("4 - exit");
+                string userCommand = Console.ReadLine();
+                switch (userCommand)
+                {
+                    case "1":
+                        userAuthSel = userPage;
+                        pageflag = false;
+                        break;
+                    case "2":
+                        userPage = Bhistory.back();
+                        break;
+                    case "3":
+                        userPage = Bhistory.forward();
+                        break;
+                    case "4":
+                        System.Environment.Exit(0);
+                        break;
+                    default:
+                        //Bhistory.visit(userCommand);
+                        break;
 
 
-            //while (true)
-            //{
-            //    Console.WriteLine("What is your next page?");
-            //    Console.WriteLine("1 - Back");
-            //    Console.WriteLine("2 - Forward");
-            //    Console.WriteLine("3 - exit");
-            //    string userCommand = Console.ReadLine();
-            //    switch (userCommand)
-            //    {
-            //        case "1":
-            //            //string userInput = Console.ReadLine();
-            //            string userInpute = "Login";
-            //            browserHistory Bhistorye = new browserHistory(userInpute);
-            //            Bhistory.back();
-            //            Console.WriteLine("Welcome Login Page");
-            //            Console.WriteLine("Your ID: ");
-
-            //            string userId = Console.ReadLine();
-            //            if (userList.Find(userId) != null)
-            //            {
-            //                Console.WriteLine("Login Successfully");
-            //                return userId;
-            //            }
-
-            //            break;
-            //        case "2":
-            //            string userInput2 = "Sign up";
-            //            browserHistory Bhistory2 = new browserHistory(userInput2);
-            //            Bhistory2.forward();
-            //            break;
-            //        case "3":
-            //            System.Environment.Exit(0);
-            //            break;
-            //        default:
-            //            //Bhistory.visit(userCommand);
-            //            break;
-            //    }
-            //}
+                }
+            }
 
             switch (userAuthSel)
             {
-                case "1":
+                case "login":
+                    Console.WriteLine();
+                    foreach (string i in userList)
+                    {
+                        Console.WriteLine($"{i}");
+                    }
                     Console.WriteLine("Your ID: ");
                     string userId = Console.ReadLine();
                     if (userList.Find(userId) != null)
@@ -69,17 +65,25 @@ namespace library_MS_practice
                         Console.WriteLine("Login Successfully");
                         return userId;
                     }
-
+                    Console.WriteLine("Login Failed, user not found");
                     break;
-                case "2":
+                case "signup":
                     Console.WriteLine("Insert your new Id: ");
                     string newUserId = Console.ReadLine();
-                    if (newUserId != "")
+                    if (userList.Find(newUserId) == null)
                     {
-                        userList.AddFirst(newUserId);
+                        if (newUserId != "")
+                        {
+                            userList.AddFirst(newUserId);
+                        }
+                    } else
+                    {
+                        Console.WriteLine("UserId already exist");
                     }
+                        
                     break;
-                case "3":
+                case "":
+                    Console.WriteLine("Seem like page are on empty string.");
                     System.Environment.Exit(0);
                     break;
                 default:
